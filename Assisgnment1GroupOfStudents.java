@@ -120,13 +120,14 @@ public class Assisgnment1GroupOfStudents {
                     input.nextLine();
                 }
             }
-                if (group.searchForStudent(studentNumber) != null) {
+                Student current = group.searchForStudent(studentNumber);
+                if (current != null) {
                     System.out.println("A new first name");
                     String newFirstName = input.nextLine();
                     System.out.println("A new second name");
                     String newSecondName = input.nextLine();
-                    student.setFirstName(newFirstName);
-                    student.setSecondName(newSecondName);
+                    current.setFirstName(newFirstName);
+                    current.setSecondName(newSecondName);
                    // System.out.println(student.getFirstName()+ " " + student.getSecondName());
                 // if the SN is not in the list request the user for a new SN
                 } else {
